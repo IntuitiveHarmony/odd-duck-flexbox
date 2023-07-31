@@ -14,3 +14,54 @@ body {
 
 /* EDIT ONLY BELOW THIS LINE */
 /* Complete each step using CSS flexbox */
+.container {
+  /* Step 1: Get your ducks in a (horizontal) row */
+  display: flex;
+  /* Step 2: This makes a duck fall off!  Get all the ducks to stay on the island */
+  flex-wrap: wrap;
+  /* Step 3: With only flex, are you able to make all the ducks stand at the same height? */
+  align-items: flex-end;
+  /* Step 4: Put some space between the flex items using something other than margin or padding */
+  gap: 2em;
+  /* ADD a flex property that will stack the ducks vertically again */
+  flex-direction: column;
+  /* At this point you should have a stack of ducks, they are probably on the right side of the island */
+  /* Step 6: Are you able to put the vertical stack of ducks in the center of the island?  */
+  align-items: center;
+}
+
+.oddDuck {
+  /* Step 7: Leaving the rest of the ducks in place, put the odd duck in the first position */
+  order: 1;
+  /* Step 9: Zig-zag the the ducks within the .container */
+  align-self: flex-start;
+}
+
+.duck {
+  /* Step 7: Leaving the rest of the ducks in place, put the odd duck in the first position */
+  order: 2;
+}
+
+#id-4 {
+  /* Step 8: Put the rest of the ducks in descending order (5, 4 , 3, 2, 1) */
+  order: 3;
+}
+
+#id-3 {
+  /* Step 8: Put the rest of the ducks in descending order (5, 4 , 3, 2, 1) */
+  order: 4;
+  /* Step 9: Zig-zag the the ducks within the .container */
+  align-self: flex-end;
+}
+
+#id-2 {
+  /* Step 8: Put the rest of the ducks in descending order (5, 4 , 3, 2, 1) */
+  order: 5;
+}
+
+#id-1 {
+  /* Step 8: Put the rest of the ducks in descending order (5, 4 , 3, 2, 1) */
+  order: 6;
+  /* Step 9: Zig-zag the the ducks within the .container */
+  align-self: flex-start;
+}
